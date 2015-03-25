@@ -76,8 +76,8 @@ class TournamentInfo extends \yii\db\ActiveRecord
             'coaches_meeting' => 'Coaches Meeting',
             'fee' => 'Fee',
             'fee_payable_to' => 'Fee Payable To',
-            'format_id' => 'Format ID',
-            'level_id' => 'Level ID',
+            'format_id' => 'Format',
+            'level_id' => 'Level',
             'players_per_team' => 'Players Per Team',
             'tournament_notes' => 'Tournament Notes',
         ];
@@ -98,8 +98,7 @@ class TournamentInfo extends \yii\db\ActiveRecord
     {
 		//code added to allow a dropdown menu
 
-		$models = TeamSeason::find()->asArray()->all();
-		return ArrayHelper::map($models, 'id', 'name');
+		return $this->hasOne(TeamSeason::className(), ['team_season_id' => 'id']);
     }
 
     /**

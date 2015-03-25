@@ -50,7 +50,7 @@ class TeeBoxInfo extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'course_id' => 'Course ID',
+            'course_id' => 'Course',
             'color' => 'Color',
             'slope' => 'Slope',
             'rating' => 'Rating',

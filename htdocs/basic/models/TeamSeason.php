@@ -56,13 +56,13 @@ class TeamSeason extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'team_info_id' => 'Team Info ID',
-            'head_coach_id' => 'Head Coach ID',
-            'ast_coach_id_1' => 'Ast Coach Id 1',
-            'ast_coach_id_2' => 'Ast Coach Id 2',
+            'team_info_id' => 'Team Info',
+            'head_coach_id' => 'Head Coach',
+            'ast_coach_id_1' => 'Ast Coach',
+            'ast_coach_id_2' => 'Ast Coach',
             'team_notes' => 'Team Notes',
-            'league_season_id' => 'League Season ID',
-            'season_id' => 'Season ID',
+            'league_season_id' => 'League Season',
+            'season_id' => 'Season',
         ];
     }
 

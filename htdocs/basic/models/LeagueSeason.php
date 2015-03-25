@@ -46,8 +46,8 @@ class LeagueSeason extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'league_id' => 'League ID',
-            'season_id' => 'Season ID',
+            'league_id' => 'League',
+            'season_id' => 'Season',
             'number_of_teams' => 'Number Of Teams',
         ];
     }

@@ -24,6 +24,10 @@ use app\models\TeamSeason
      <?= $form->field($model, 'team_season_id')->dropDownList( ArrayHelper::map( TeamSeason::find()->all(),
 			'id',
 			function($a){ return $a->teamInfo['school_name']; }))?>
+			    
+	<div class="form-group">
+        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+    </div>
 
     <?php ActiveForm::end(); ?>
 

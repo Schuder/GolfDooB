@@ -11,7 +11,7 @@ use yii\widgets\ActiveForm;
 <div class="league-info-form">
 
     <?php $form = ActiveForm::begin(); ?>
-	<?= $form->field($model, 'league_name')->textarea(['rows' => 6]) ?>
+	<?= $form->field($model, 'league_name')->textInput(['maxlength' => 50]) ?>
 	
     <?= $form->field($model, 'league_notes')->textarea(['rows' => 6]) ?>
 

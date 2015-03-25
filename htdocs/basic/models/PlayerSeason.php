@@ -46,8 +46,8 @@ class PlayerSeason extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'player_info_id' => 'Player Info ID',
-            'team_season_id' => 'Team Season ID',
+            'player_info_id' => 'Player Info',
+            'team_season_id' => 'Team Season',
             'year_in_school' => 'Year In School',
             'player_season_notes' => 'Player Season Notes',
         ];

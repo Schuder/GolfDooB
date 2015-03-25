@@ -98,9 +98,15 @@ class CoachInfoController extends Controller
      */
     public function actionDelete($id)
     {
+	try{
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
+		}
+	catch (yii\db\IntegrityException $e)
+		{
+			return $this->redirect(['index']);
+		}
     }
 
     /**

@@ -2,7 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-
+use app\models\TeamSeason;
+use yii\helpers\ArrayHelper;
 /* @var $this yii\web\View */
 /* @var $model app\models\TournamentInfo */
 /* @var $form yii\widgets\ActiveForm */
@@ -12,7 +13,11 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'host_team_id')->dropDownList($model->HostTeam) ?>
+    <?= $form->field($model, 'host_team_id')->dropDownList( ArrayHelper::map( TeamSeason::find()->all(),
+			'id',
+			function($a){ return $a->teamInfo['school_name'] . ' - ' . $a->teamInfo['mascot'] . ' - ' . $a->season['year']; }
+		)
+	) ?>
 
     <?= $form->field($model, 'course_id')->dropDownList($model->Course) ?>
 
@@ -31,7 +36,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'fee')->textInput() ?>
 
     <?= $form->field($model, 'fee_payable_to')->textInput(['maxlength' => 50]) ?>
-
+ 
     <?= $form->field($model, 'format_id')->dropDownList($model->Format) ?>
 
     <?= $form->field($model, 'level_id')->dropDownList($model->Format) ?>

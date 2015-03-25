@@ -8,6 +8,7 @@ use app\models\SearchCourseInfo;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\db\IntegrityException;
 
 /**
  * CourseInfoController implements the CRUD actions for CourseInfo model.

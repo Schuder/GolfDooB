@@ -45,7 +45,7 @@ class Season extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => '50 char limit, name of season (Fall Girls, Spring Boys, etc)',
+            'name' => 'Season Name',
             'year' => 'Year',
         ];
     }

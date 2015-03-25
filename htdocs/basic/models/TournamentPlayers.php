@@ -51,14 +51,14 @@ class TournamentPlayers extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'tournament_id' => 'Tournament ID',
-            'player_season_id' => 'Player Season ID',
+            'tournament_id' => 'Tournament',
+            'player_season_id' => 'Player Season',
             'score_front' => 'Score Front',
             'score_back' => 'Score Back',
             'score_total' => 'Score Total',
             'disqualified' => 'Disqualified',
             'round_notes' => 'Round Notes',
-            'additional_stats_id' => 'Additional Stats ID',
+            'additional_stats_id' => 'Additional Stats',
         ];
     }
 
