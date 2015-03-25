@@ -1,3 +1,18 @@
+#Ignore all
 *
+
 !htdocs/
+!htdocs/*
+!htdocs/*/*
+!htdocs/*/*/*
+!htdocs/*/*/*/*
+!htdocs/*/*/*/*/*
+!htdocs/*/*/*/*/*/*
+!htdocs/*/*/*/*/*/*/*
+
+
 !mysql/
+!mysql/*
+!mysql/*/*
+!mysql/*/*/*
+!mysql/*/*/*/*
