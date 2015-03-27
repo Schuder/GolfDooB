@@ -18,3 +18,4 @@
 !mysql/*/*/*/*
 
 *.ini
+mysql/bin/my.ini
