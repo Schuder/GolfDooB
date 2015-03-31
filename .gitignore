@@ -1,5 +1,4 @@
 #Ignore all
-mysql/bin/my.ini
 *
 
 !htdocs/
@@ -10,7 +9,6 @@ mysql/bin/my.ini
 !htdocs/*/*/*/*/*
 !htdocs/*/*/*/*/*/*
 !htdocs/*/*/*/*/*/*/*
-
 
 !mysql/
 !mysql/*
