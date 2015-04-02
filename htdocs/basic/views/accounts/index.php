@@ -27,6 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'username',
             'password',
+            'email:email',
             'coach_id',
             'player_id',
 

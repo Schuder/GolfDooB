@@ -18,7 +18,7 @@ class SearchAccounts extends Accounts
     public function rules()
     {
         return [
-            [['username', 'password'], 'safe'],
+            [['username', 'password', 'email'], 'safe'],
             [['coach_id', 'player_id'], 'integer'],
         ];
     }
@@ -57,7 +57,8 @@ class SearchAccounts extends Accounts
         ]);
 
         $query->andFilterWhere(['like', 'username', $this->username])
-            ->andFilterWhere(['like', 'password', $this->password]);
+            ->andFilterWhere(['like', 'password', $this->password])
+            ->andFilterWhere(['like', 'email', $this->email]);
 
         return $dataProvider;
     }

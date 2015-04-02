@@ -9,6 +9,7 @@ use Yii;
  *
  * @property string $username
  * @property string $password
+ * @property string $email
  * @property integer $coach_id
  * @property integer $player_id
  *
@@ -31,10 +32,11 @@ class Accounts extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['username', 'password'], 'required'],
+            [['username', 'password', 'email'], 'required'],
             [['coach_id', 'player_id'], 'integer'],
             [['username'], 'string', 'max' => 32],
             [['password'], 'string', 'max' => 60],
+            [['email'], 'string', 'max' => 50],
             [['coach_id', 'player_id'], 'unique', 'targetAttribute' => ['coach_id', 'player_id'], 'message' => 'The combination of Coach ID and Player ID has already been taken.']
         ];
     }
@@ -47,6 +49,7 @@ class Accounts extends \yii\db\ActiveRecord
         return [
             'username' => 'Username',
             'password' => 'Password',
+            'email' => 'Email',
             'coach_id' => 'Coach ID',
             'player_id' => 'Player ID',
         ];
