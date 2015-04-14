@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * PlayerInfoController implements the CRUD actions for PlayerInfo model.
  */
-class PlayerInfoController extends Controller
+class PlayerInfoController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all PlayerInfo models.

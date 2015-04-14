@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * TeeBoxInfoController implements the CRUD actions for TeeBoxInfo model.
  */
-class TeeBoxInfoController extends Controller
+class TeeBoxInfoController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all TeeBoxInfo models.

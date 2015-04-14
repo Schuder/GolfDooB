@@ -12,19 +12,8 @@ use yii\filters\VerbFilter;
 /**
  * CoachInfoController implements the CRUD actions for CoachInfo model.
  */
-class CoachInfoController extends Controller
+class CoachInfoController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all CoachInfo models.

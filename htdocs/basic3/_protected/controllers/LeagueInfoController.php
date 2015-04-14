@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * LeagueInfoController implements the CRUD actions for LeagueInfo model.
  */
-class LeagueInfoController extends Controller
+class LeagueInfoController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all LeagueInfo models.

@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * AdditonalStatsController implements the CRUD actions for AdditonalStats model.
  */
-class AdditonalStatsController extends Controller
+class AdditonalStatsController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all AdditonalStats models.

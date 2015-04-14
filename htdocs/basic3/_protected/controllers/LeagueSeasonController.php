@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * LeagueSeasonController implements the CRUD actions for LeagueSeason model.
  */
-class LeagueSeasonController extends Controller
+class LeagueSeasonController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all LeagueSeason models.

@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * TeamInfoController implements the CRUD actions for TeamInfo model.
  */
-class TeamInfoController extends Controller
+class TeamInfoController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all TeamInfo models.

@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * LeagueTournamentController implements the CRUD actions for LeagueTournament model.
  */
-class LeagueTournamentController extends Controller
+class LeagueTournamentController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all LeagueTournament models.

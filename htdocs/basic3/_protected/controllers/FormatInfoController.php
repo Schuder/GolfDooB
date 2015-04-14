@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * FormatInfoController implements the CRUD actions for FormatInfo model.
  */
-class FormatInfoController extends Controller
+class FormatInfoController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all FormatInfo models.

@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * TeamSeasonController implements the CRUD actions for TeamSeason model.
  */
-class TeamSeasonController extends Controller
+class TeamSeasonController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all TeamSeason models.

@@ -13,19 +13,8 @@ use yii\db\IntegrityException;
 /**
  * CourseInfoController implements the CRUD actions for CourseInfo model.
  */
-class CourseInfoController extends Controller
+class CourseInfoController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
 
     /**
      * Lists all CourseInfo models.

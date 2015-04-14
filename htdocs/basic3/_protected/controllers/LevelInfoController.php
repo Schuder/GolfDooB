@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * LevelInfoController implements the CRUD actions for LevelInfo model.
  */
-class LevelInfoController extends Controller
+class LevelInfoController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all LevelInfo models.

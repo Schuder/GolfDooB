@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * TournamentPlayersController implements the CRUD actions for TournamentPlayers model.
  */
-class TournamentPlayersController extends Controller
+class TournamentPlayersController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all TournamentPlayers models.

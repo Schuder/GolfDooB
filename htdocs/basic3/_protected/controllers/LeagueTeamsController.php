@@ -12,19 +12,9 @@ use yii\filters\VerbFilter;
 /**
  * LeagueTeamsController implements the CRUD actions for LeagueTeams model.
  */
-class LeagueTeamsController extends Controller
+class LeagueTeamsController extends AppController
 {
-    public function behaviors()
-    {
-        return [
-            'verbs' => [
-                'class' => VerbFilter::className(),
-                'actions' => [
-                    'delete' => ['post'],
-                ],
-            ],
-        ];
-    }
+
 
     /**
      * Lists all LeagueTeams models.
