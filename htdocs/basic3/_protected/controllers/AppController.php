@@ -32,7 +32,7 @@ class AppController extends Controller
                         'roles' => ['admin'],
                     ],
                     [
-                        'controllers' => ['article'],
+                        'controllers' => ['article','coachinfo'],
                         'actions' => ['create', 'update', 'admin'],
                         'allow' => true,
                         'roles' => ['editor'],
