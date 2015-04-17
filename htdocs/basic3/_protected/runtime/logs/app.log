@@ -4673,3 +4673,148 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1429118815.145
     'REQUEST_TIME' => 1429118815
 ]
+2015-04-17 19:09:49 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "web/index.php".' in C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('web/index.php', Array)
+#1 C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\01008649\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\01008649\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#2 {main}
+2015-04-17 19:09:48 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => 'eae69e42399e810b9553c94aea257ae4fc361c89a4629a1275797f6fde48f04as:32:\"tH7QGfNy20EFJzhg6EsSK8FNRd7q62bC\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008649/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008649/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008649/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008649/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=eae69e42399e810b9553c94aea257ae4fc361c89a4629a1275797f6fde48f04as%3A32%3A%22tH7QGfNy20EFJzhg6EsSK8FNRd7q62bC%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\Xuggle\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008649\\GolfDooB\\php;C:\\Users\\01008649\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008649/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008649/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008649/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54770'
+    'REDIRECT_URL' => '/basic3/web/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic3/web/index.php'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429290588.339
+    'REQUEST_TIME' => 1429290588
+]
+2015-04-17 19:13:04 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: site/contact' in C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php:122
+Stack trace:
+#0 C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('contact', Array)
+#1 C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('site/contact', Array)
+#2 C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\Users\01008649\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\01008649\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#2 {main}
+2015-04-17 19:13:04 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'PHPSESSID' => '0vd5id3lb99ik5l7ocqafljjl7'
+    '_csrf' => 'ae22c057092f57b07584fe0205e642fe1de66b70e65370cdbfcab43681e400cca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"LiW1aqq6lzUfF9VHOnZA5Pgy3SqO0nBX\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008649/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008649/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008649/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008649/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://127.0.0.1/basic3/site/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=0vd5id3lb99ik5l7ocqafljjl7; _csrf=ae22c057092f57b07584fe0205e642fe1de66b70e65370cdbfcab43681e400cca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22LiW1aqq6lzUfF9VHOnZA5Pgy3SqO0nBX%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\Xuggle\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008649\\GolfDooB\\php;C:\\Users\\01008649\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008649/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008649/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008649/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54869'
+    'REDIRECT_URL' => '/basic3/site/contact'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic3/site/contact'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429290784.954
+    'REQUEST_TIME' => 1429290784
+]

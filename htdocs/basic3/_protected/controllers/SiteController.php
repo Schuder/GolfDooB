@@ -104,6 +104,7 @@ class SiteController extends Controller
      *
      * @return string|\yii\web\Response
      */
+	 /*
     public function actionContact()
     {
         $model = new ContactForm();
@@ -129,7 +130,7 @@ class SiteController extends Controller
             ]);
         }
     }
-
+*/
 //------------------------------------------------------------------------------------------------//
 // LOG IN / LOG OUT / PASSWORD RESET
 //------------------------------------------------------------------------------------------------//
