@@ -8,6 +8,7 @@ use app\models\SearchCoachInfo;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\MethodNotAllowedHttpException;
 
 /**
  * CoachInfoController implements the CRUD actions for CoachInfo model.
@@ -51,6 +52,8 @@ class CoachInfoController extends AppController
     {
         $model = new CoachInfo();
 
+		 $model->user_id = Yii::$app->user->id;
+		
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -68,6 +71,8 @@ class CoachInfoController extends AppController
      */
     public function actionUpdate($id)
     {
+
+	/*
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
@@ -77,6 +82,29 @@ class CoachInfoController extends AppController
                 'model' => $model,
             ]);
         }
+		*/
+			
+        $model = $this->findModel($id);
+
+        if (Yii::$app->user->can('updateArticle', ['model' => $model])) 
+        {
+            if ($model->load(Yii::$app->request->post()) && $model->save()) 
+            {
+                return $this->redirect(['view', 'id' => $model->id]);
+            } 
+            else 
+            {
+                return $this->render('update', [
+                    'model' => $model,
+                ]);
+            }
+        }
+        else
+        {
+            throw new MethodNotAllowedHttpException(Yii::t('app', 'You are not allowed to access this page.'));
+        } 		
+		
+		
     }
 
     /**

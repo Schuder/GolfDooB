@@ -6,7 +6,6 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $model app\models\CoachInfo */
 /* @var $form yii\widgets\ActiveForm */
-//DROPDOWN DONE!
 ?>
 
 <div class="coach-info-form">

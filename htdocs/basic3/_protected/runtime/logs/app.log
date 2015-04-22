@@ -4673,3 +4673,738 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1429118815.145
     'REQUEST_TIME' => 1429118815
 ]
+2015-04-20 18:56:30 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\filters\AccessControl.php(126): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('delete', Array)
+#8 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('coachinfo/delet...', Array)
+#9 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Users\01008945\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#11 {main}
+2015-04-20 18:56:30 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'dk1kVjFVemgsBV0aQSQ5PiUFAyxyE0NbIhUKJgNhTAAkfyoQQ3gbBQ=='
+]
+
+$_COOKIE = [
+    '_csrf' => 'b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZH9LpqCVSHgzCF93TXnp246hR2NFr-am\";}'
+    'PHPSESSID' => 'ha76v9pvpvs63om34v7l8h4io4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/basic3/coachinfo/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZH9LpqCVSHgzCF93TXnp246hR2NFr-am%22%3B%7D; PHPSESSID=ha76v9pvpvs63om34v7l8h4io4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008945\\GolfDooB\\php;C:\\Users\\01008945\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008945/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54666'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/basic3/coachinfo/delete'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/basic3/coachinfo/delete?id=1'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429548990.724
+    'REQUEST_TIME' => 1429548990
+]
+2015-04-20 18:56:37 [::1][1][-][error][yii\web\HttpException:403] exception 'yii\web\ForbiddenHttpException' with message 'You are not allowed to perform this action.' in C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\filters\AccessControl.php:151
+Stack trace:
+#0 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\filters\AccessControl.php(126): yii\filters\AccessControl->denyAccess(Object(yii\web\User))
+#1 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\ActionFilter.php(71): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#2 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#3 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Component.php(538): call_user_func(Array, Object(yii\base\ActionEvent))
+#4 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php(259): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#5 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#6 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php(149): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#7 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('delete', Array)
+#8 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('coachinfo/delet...', Array)
+#9 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 C:\Users\01008945\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#11 {main}
+2015-04-20 18:56:37 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'bTA4R2dnT3Q3eAELFxYMIj54Xz0kIXZHOWhWN1VTeRw/AnYBFUouGQ=='
+]
+
+$_COOKIE = [
+    '_csrf' => 'b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZH9LpqCVSHgzCF93TXnp246hR2NFr-am\";}'
+    'PHPSESSID' => 'ha76v9pvpvs63om34v7l8h4io4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '68'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost/basic3/coachinfo/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZH9LpqCVSHgzCF93TXnp246hR2NFr-am%22%3B%7D; PHPSESSID=ha76v9pvpvs63om34v7l8h4io4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008945\\GolfDooB\\php;C:\\Users\\01008945\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008945/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54668'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/basic3/coachinfo/delete'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/basic3/coachinfo/delete?id=1'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429548997.741
+    'REQUEST_TIME' => 1429548997
+]
+2015-04-20 19:03:17 [::1][1][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Coachinfo::createdBy' in C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('createdBy')
+#1 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\rbac\rules\AuthorRule.php(22): yii\db\BaseActiveRecord->__get('createdBy')
+#2 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\BaseManager.php(208): app\rbac\rules\AuthorRule->execute(1, Object(yii\rbac\Permission), Array)
+#3 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\DbManager.php(190): yii\rbac\BaseManager->executeRule(1, Object(yii\rbac\Permission), Array)
+#4 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\DbManager.php(204): yii\rbac\DbManager->checkAccessRecursive(1, 'updateOwnArticl...', Array, Array)
+#5 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\DbManager.php(124): yii\rbac\DbManager->checkAccessRecursive(1, 'updateArticle', Array, Array)
+#6 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\User.php(662): yii\rbac\DbManager->checkAccess(1, 'updateArticle', Array)
+#7 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\controllers\CoachInfoController.php(76): yii\web\User->can('updateArticle', Array)
+#8 [internal function]: app\controllers\CoachInfoController->actionUpdate('1')
+#9 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#12 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('coachinfo/updat...', Array)
+#13 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Users\01008945\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#15 {main}
+2015-04-20 19:03:17 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZH9LpqCVSHgzCF93TXnp246hR2NFr-am\";}'
+    'PHPSESSID' => 'ha76v9pvpvs63om34v7l8h4io4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/basic3/coachinfo/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZH9LpqCVSHgzCF93TXnp246hR2NFr-am%22%3B%7D; PHPSESSID=ha76v9pvpvs63om34v7l8h4io4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008945\\GolfDooB\\php;C:\\Users\\01008945\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008945/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54856'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/basic3/coachinfo/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/basic3/coachinfo/update?id=1'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429549397.818
+    'REQUEST_TIME' => 1429549397
+]
+2015-04-20 19:04:11 [::1][1][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Coachinfo::createdBy' in C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('createdBy')
+#1 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\rbac\rules\AuthorRule.php(22): yii\db\BaseActiveRecord->__get('createdBy')
+#2 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\BaseManager.php(208): app\rbac\rules\AuthorRule->execute(1, Object(yii\rbac\Permission), Array)
+#3 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\DbManager.php(190): yii\rbac\BaseManager->executeRule(1, Object(yii\rbac\Permission), Array)
+#4 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\DbManager.php(204): yii\rbac\DbManager->checkAccessRecursive(1, 'updateOwnArticl...', Array, Array)
+#5 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\DbManager.php(124): yii\rbac\DbManager->checkAccessRecursive(1, 'updateArticle', Array, Array)
+#6 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\User.php(662): yii\rbac\DbManager->checkAccess(1, 'updateArticle', Array)
+#7 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\controllers\CoachInfoController.php(90): yii\web\User->can('updateArticle', Array)
+#8 [internal function]: app\controllers\CoachInfoController->actionUpdate('1')
+#9 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#12 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('coachinfo/updat...', Array)
+#13 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Users\01008945\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#15 {main}
+2015-04-20 19:04:11 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZH9LpqCVSHgzCF93TXnp246hR2NFr-am\";}'
+    'PHPSESSID' => 'ha76v9pvpvs63om34v7l8h4io4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/basic3/coachinfo/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZH9LpqCVSHgzCF93TXnp246hR2NFr-am%22%3B%7D; PHPSESSID=ha76v9pvpvs63om34v7l8h4io4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008945\\GolfDooB\\php;C:\\Users\\01008945\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008945/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54865'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/basic3/coachinfo/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/basic3/coachinfo/update?id=1'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429549451.447
+    'REQUEST_TIME' => 1429549451
+]
+2015-04-20 19:09:40 [::1][1][ha76v9pvpvs63om34v7l8h4io4][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\controllers\MethodNotAllowedHttpException' not found' in C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\controllers\CoachInfoController.php:103
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2015-04-20 19:09:39 [::1][1][ha76v9pvpvs63om34v7l8h4io4][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZH9LpqCVSHgzCF93TXnp246hR2NFr-am\";}'
+    'PHPSESSID' => 'ha76v9pvpvs63om34v7l8h4io4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/basic3/coachinfo/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZH9LpqCVSHgzCF93TXnp246hR2NFr-am%22%3B%7D; PHPSESSID=ha76v9pvpvs63om34v7l8h4io4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008945\\GolfDooB\\php;C:\\Users\\01008945\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008945/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54943'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/basic3/coachinfo/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/basic3/coachinfo/update?id=1'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429549779.939
+    'REQUEST_TIME' => 1429549779
+]
+2015-04-20 19:10:13 [::1][1][-][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'You are not allowed to access this page.' in C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\controllers\CoachInfoController.php:104
+Stack trace:
+#0 [internal function]: app\controllers\CoachInfoController->actionUpdate('1')
+#1 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#3 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#4 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('coachinfo/updat...', Array)
+#5 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\Users\01008945\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#7 {main}
+2015-04-20 19:10:13 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZH9LpqCVSHgzCF93TXnp246hR2NFr-am\";}'
+    'PHPSESSID' => 'ha76v9pvpvs63om34v7l8h4io4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/basic3/coachinfo/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZH9LpqCVSHgzCF93TXnp246hR2NFr-am%22%3B%7D; PHPSESSID=ha76v9pvpvs63om34v7l8h4io4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008945\\GolfDooB\\php;C:\\Users\\01008945\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008945/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54961'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/basic3/coachinfo/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/basic3/coachinfo/update?id=1'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429549813.649
+    'REQUEST_TIME' => 1429549813
+]
+2015-04-20 19:10:16 [::1][1][-][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'You are not allowed to access this page.' in C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\controllers\CoachInfoController.php:104
+Stack trace:
+#0 [internal function]: app\controllers\CoachInfoController->actionUpdate('2')
+#1 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#3 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#4 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('coachinfo/updat...', Array)
+#5 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\Users\01008945\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#7 {main}
+2015-04-20 19:10:16 [::1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZH9LpqCVSHgzCF93TXnp246hR2NFr-am\";}'
+    'PHPSESSID' => 'ha76v9pvpvs63om34v7l8h4io4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/basic3/coachinfo/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZH9LpqCVSHgzCF93TXnp246hR2NFr-am%22%3B%7D; PHPSESSID=ha76v9pvpvs63om34v7l8h4io4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008945\\GolfDooB\\php;C:\\Users\\01008945\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008945/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54962'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => '/basic3/coachinfo/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/basic3/coachinfo/update?id=2'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429549816.319
+    'REQUEST_TIME' => 1429549816
+]
+2015-04-20 19:10:36 [::1][1][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: app\models\Coachinfo::createdBy' in C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Component.php:143
+Stack trace:
+#0 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\db\BaseActiveRecord.php(246): yii\base\Component->__get('createdBy')
+#1 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\rbac\rules\AuthorRule.php(22): yii\db\BaseActiveRecord->__get('createdBy')
+#2 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\BaseManager.php(208): app\rbac\rules\AuthorRule->execute(1, Object(yii\rbac\Permission), Array)
+#3 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\DbManager.php(190): yii\rbac\BaseManager->executeRule(1, Object(yii\rbac\Permission), Array)
+#4 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\DbManager.php(204): yii\rbac\DbManager->checkAccessRecursive(1, 'updateOwnArticl...', Array, Array)
+#5 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\rbac\DbManager.php(124): yii\rbac\DbManager->checkAccessRecursive(1, 'updateArticle', Array, Array)
+#6 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\User.php(662): yii\rbac\DbManager->checkAccess(1, 'updateArticle', Array)
+#7 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\controllers\CoachInfoController.php(89): yii\web\User->can('updateArticle', Array)
+#8 [internal function]: app\controllers\CoachInfoController->actionUpdate('2')
+#9 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#10 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#11 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#12 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('coachinfo/updat...', Array)
+#13 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 C:\Users\01008945\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#15 {main}
+2015-04-20 19:10:36 [::1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZH9LpqCVSHgzCF93TXnp246hR2NFr-am\";}'
+    'PHPSESSID' => 'ha76v9pvpvs63om34v7l8h4io4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/basic3/coachinfo/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZH9LpqCVSHgzCF93TXnp246hR2NFr-am%22%3B%7D; PHPSESSID=ha76v9pvpvs63om34v7l8h4io4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008945\\GolfDooB\\php;C:\\Users\\01008945\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008945/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54979'
+    'REDIRECT_QUERY_STRING' => 'id=2'
+    'REDIRECT_URL' => '/basic3/coachinfo/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=2'
+    'REQUEST_URI' => '/basic3/coachinfo/update?id=2'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429549836.238
+    'REQUEST_TIME' => 1429549836
+]
+2015-04-20 19:11:09 [::1][1][-][error][yii\web\HttpException:405] exception 'yii\web\MethodNotAllowedHttpException' with message 'You are not allowed to access this page.' in C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\controllers\CoachInfoController.php:104
+Stack trace:
+#0 [internal function]: app\controllers\CoachInfoController->actionUpdate('1')
+#1 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#2 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#3 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('update', Array)
+#4 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('coachinfo/updat...', Array)
+#5 C:\Users\01008945\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\Users\01008945\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#7 {main}
+2015-04-20 19:11:09 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => 'b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZH9LpqCVSHgzCF93TXnp246hR2NFr-am\";}'
+    'PHPSESSID' => 'ha76v9pvpvs63om34v7l8h4io4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008945/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008945/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost/basic3/coachinfo/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=b6f8ca8bc7050af3e2795e1999abdf440302b9c2110041c613720d8361582c96a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZH9LpqCVSHgzCF93TXnp246hR2NFr-am%22%3B%7D; PHPSESSID=ha76v9pvpvs63om34v7l8h4io4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008945\\GolfDooB\\php;C:\\Users\\01008945\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.5.19'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008945/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008945/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '54992'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/basic3/coachinfo/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/basic3/coachinfo/update?id=1'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1429549869.508
+    'REQUEST_TIME' => 1429549869
+]
