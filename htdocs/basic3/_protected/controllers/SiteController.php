@@ -98,7 +98,7 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-
+	
     /**
      * Displays the contact static page and sends the contact email.
      *
