@@ -5408,3 +5408,74 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1429549869.508
     'REQUEST_TIME' => 1429549869
 ]
+2015-05-04 18:54:11 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "web/index.php".' in C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php(83): yii\base\Module->runAction('web/index.php', Array)
+#1 C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\01008649\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\web\Application.php:95
+Stack trace:
+#0 C:\Users\01008649\GolfDooB\htdocs\basic3\_protected\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\01008649\GolfDooB\htdocs\basic3\index.php(12): yii\base\Application->run()
+#2 {main}
+2015-05-04 18:54:10 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2da29332a533ea31fe07e647a9f8b178893c85746dfae2ded01b833969622c50s:32:\"SXcnTMewLjnyrrb-RyWeQsZILWPx3ogT\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => '/Users/01008649/GolfDooB/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => '/Users/01008649/GolfDooB/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => '/Users/01008649/GolfDooB/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => '/Users/01008649/GolfDooB/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => '127.0.0.1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => '_csrf=2da29332a533ea31fe07e647a9f8b178893c85746dfae2ded01b833969622c50s%3A32%3A%22SXcnTMewLjnyrrb-RyWeQsZILWPx3ogT%22%3B'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Microsoft Application Virtualization Client;C:\\Program Files (x86)\\Java\\jdk1.6.0_26\\bin\\;C:\\Program Files (x86)\\Xuggle\\bin;C:\\Program Files (x86)\\QuickTime\\QTSystem\\;C:\\Users\\01008649\\GolfDooB\\php;C:\\Users\\01008649\\AppData\\Local\\ComposerSetup\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3 Server at 127.0.0.1 Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i PHP/5.6.3'
+    'SERVER_NAME' => '127.0.0.1'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/Users/01008649/GolfDooB/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/Users/01008649/GolfDooB/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/Users/01008649/GolfDooB/htdocs/basic3/index.php'
+    'REMOTE_PORT' => '61842'
+    'REDIRECT_URL' => '/basic3/web/index.php'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/basic3/web/index.php'
+    'SCRIPT_NAME' => '/basic3/index.php'
+    'PHP_SELF' => '/basic3/index.php'
+    'REQUEST_TIME_FLOAT' => 1430758450.315
+    'REQUEST_TIME' => 1430758450
+]
