@@ -5,8 +5,10 @@ namespace app\controllers;
 use Yii;
 use app\models\TeamSeason;
 use app\models\SearchTeamSeason;
+use app\models\CoachInfo;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\web\MethodNotAllowedHttpException;
 use yii\filters\VerbFilter;
 
 /**
@@ -88,7 +90,17 @@ class TeamSeasonController extends AppController
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
+		$currentUserId = Yii::$app->user->id;
+		$model = $this->findModel($id);
+		$queryCoachInfo = CoachInfo::find()->where(['user_id' =>$currentUserId])->all();
+		$modelCoachInfo = $queryCoachInfo[0];
+		
+		if ($model['head_coach_id'] == $modelCoachInfo['user_id']) {
+		        $this->findModel($id)->delete();
+		}
+		else {
+			throw new MethodNotAllowedHttpException(Yii::t('app', 'You are not allowed to delete this page.'));
+		}
 
         return $this->redirect(['index']);
     }

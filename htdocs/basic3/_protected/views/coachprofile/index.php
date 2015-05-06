@@ -14,7 +14,11 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <h1 class="text-capitalize"> <?php echo $modelCoachInfo['first_name'] ?> <small> <?php echo $modelCoachInfo['last_name'] ?> </small></h1>
 <hr/>
-<h2 class ="text-capitalize" >
+<h3>Bio</h3>
+<p class="text-capitalize"> <?php echo $modelCoachInfo['coach_notes'] ?> </p>
+
+<h3>Team</h3>
+<p class ="text-capitalize" >
 		<?php 
 		if($modelTeamInfo['school_name'] == null) {
 			echo ' <a href="http://localhost/basic3/teamseason/create" ><button type="button" class="btn btn-default">Team Season Create</button></a>';
@@ -24,6 +28,17 @@ $this->params['breadcrumbs'][] = $this->title;
 		}
 		
 		?>
-</h2>
+</p>
+
+<h3>Email</h3>
+<p class="text-capitalize"> <?php echo $modelCoachInfo['coach_email'] ?></hp>
+
+<h3>Cell Phone</h3>
+<p class="text-capitalize"> <?php echo $modelCoachInfo['cell_number'] ?></hp>
+
+<h3>Home Phone</h3>
+<p class="text-capitalize"> <?php echo $modelCoachInfo['home_number'] ?></hp>
+<hr>
+<?php echo '<a href="http://localhost/basic3/coachinfo/update?id='.$modelCoachInfo['id'].'"><button type="button" class="btn btn-default">Edit Info</button></a>'; ?>
 
 </div>

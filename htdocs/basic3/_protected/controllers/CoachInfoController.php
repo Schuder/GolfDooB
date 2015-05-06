@@ -50,7 +50,7 @@ class CoachInfoController extends AppController
      */
     public function actionCreate()
     {
-        $model = new CoachInfo();
+         $model = new CoachInfo();
 
 		 $model->user_id = Yii::$app->user->id;
 		

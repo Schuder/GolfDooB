@@ -26,14 +26,14 @@ class AppController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
-                        'controllers' => ['user', 'article','coachinfo', 'additonalstats','courseinfo','formatinfo','leagueinfo','leagueseason','leagueteams','leaguetournament','levelinfo','playerinfo','playerseason','teaminfo','teamseason','teeboxinfo','tournamentinfo','tournamentplayers','coachprofile'],
+                        'controllers' => ['user', 'article','coachinfo', 'additonalstats','courseinfo','formatinfo','leagueinfo','leagueseason','leagueteams','leaguetournament','levelinfo','playerinfo','playerseason','teaminfo','teamseason','teeboxinfo','tournamentinfo','tournamentplayers','coachprofile','teamprofile'],
                         'actions' => ['index', 'view', 'create', 'update', 'delete', 'admin'],
                         'allow' => true,
                         'roles' => ['admin'],
                     ],
                     [
-                        'controllers' => ['article','coachinfo'],
-                        'actions' => ['create', 'update', 'admin'],
+                        'controllers' => ['article','coachinfo','coachprofile','playerinfo','playerseason','teamprofile','teamseason'],
+                        'actions' => ['index','create', 'update', 'admin','delete'],
                         'allow' => true,
                         'roles' => ['editor'],
                     ],

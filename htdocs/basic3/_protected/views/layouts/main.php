@@ -60,14 +60,14 @@ AppAsset::register($this);
             // we do not need to display Article/index, About and Contact pages to editor+ roles
             if (!Yii::$app->user->can('editor')) 
             {
-                $menuItems[] = ['label' => Yii::t('app', 'Articles'), 'url' => ['/article/index']];
                 $menuItems[] = ['label' => Yii::t('app', 'About'), 'url' => ['/site/about']];
             }
 
             // display Article admin page to editor+ roles
             if (Yii::$app->user->can('editor'))
             {
-                $menuItems[] = ['label' => Yii::t('app', 'Articles'), 'url' => ['/article/admin']];
+                $menuItems[] = ['label' => Yii::t('app', 'Profile'), 'url' => ['/coachprofile/index']];
+				$menuItems[] = ['label' => Yii::t('app', 'Team'), 'url' => ['/teamprofile/index']];
             }            
 
             // display Users to admin+ roles
