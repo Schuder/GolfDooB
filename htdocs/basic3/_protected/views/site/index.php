@@ -6,18 +6,24 @@ $this->title = Yii::t('app', Yii::$app->name);
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully installed Yii2 improved application template</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.freetuts.org/tutorial/view?id=6">Read our tutorial</a></p>
-    </div>
-
+        <h1>Welcome!</h1>
+	<?php if (Yii::$app->user->isGuest) 
+	{
+      ?>  <p class="lead"></p>
+	  <p><a class="btn btn-lg btn-success" href="site/signup">You should create an account!</a></p>
+	<?php }
+	else if (!Yii::$app->user->isGuest &&  $modelCoachInfo == null)
+		{?>
+		<p><a class="btn btn-lg btn-success" href="coachinfo/create">Get Started by Telling Us About Yourself!</a></p>
+		<?php }else{ ?>
+		<p><a class="btn btn-lg btn-success" href="../coachprofile/index"><?php echo $modelCoachInfo['first_name'] ?> <?php echo $modelCoachInfo['last_name'] ?> Profile</a></p>
+		<?php } ?>
+	  </div>
     <div class="body-content">
 
         <div class="row">
             <div class="col-lg-3">
-                <h3>Yii documentation</h3>
+                <h3>Don't know yet</h3>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -28,7 +34,7 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
             </div>
             <div class="col-lg-3">
-                <h3>Yii forum</h3>
+                <h3>Don't know yet</h3>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -39,7 +45,7 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
             </div>
             <div class="col-lg-3">
-                <h3>Yii extensions</h3>
+                <h3>Don't know yet</h3>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -50,7 +56,7 @@ $this->title = Yii::t('app', Yii::$app->name);
                 <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
             </div>
             <div class="col-lg-3">
-                <h3>Freetuts.org</h3>
+                <h3>Don't know yet</h3>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

@@ -1,6 +1,8 @@
 <?php
 namespace app\controllers;
 
+use app\models\SearchCoachInfo;
+use app\models\CoachInfo;
 use app\models\User;
 use app\models\LoginForm;
 use app\models\AccountActivation;
@@ -21,7 +23,7 @@ use Yii;
  * It is responsible for displaying static pages, logging users in and out,
  * sign up and account activation, password reset.
  */
-class SiteController extends Controller
+class SiteController extends AppController
 {
     /**
      * Returns a list of behaviors that this component should behave as.
@@ -86,7 +88,16 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+		$currentUserId = Yii::$app->user->id;
+		$queryCoachInfo = CoachInfo::find()->where(['user_id' =>$currentUserId])->all();
+		if ($queryCoachInfo == null)
+			$modelCoachInfo =  null;
+		else
+		{
+			$modelCoachInfo = $queryCoachInfo[0];
+		}
+			return $this->render('index',['modelCoachInfo' => $modelCoachInfo]);
+
     }
 
     /**
