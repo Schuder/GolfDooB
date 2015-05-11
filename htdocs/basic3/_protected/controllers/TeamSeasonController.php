@@ -95,7 +95,7 @@ class TeamSeasonController extends AppController
 		$queryCoachInfo = CoachInfo::find()->where(['user_id' =>$currentUserId])->all();
 		$modelCoachInfo = $queryCoachInfo[0];
 		
-		if ($model['head_coach_id'] == $modelCoachInfo['user_id']) {
+		if ($model['head_coach_id'] == $modelCoachInfo['id']) {
 		        $this->findModel($id)->delete();
 		}
 		else {

@@ -12,7 +12,23 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="coach-profile-index">
 
-<h1 class="text-capitalize"> <?php echo $modelCoachInfo['first_name'] ?> <small> <?php echo $modelCoachInfo['last_name'] ?> </small></h1>
+<h1 class="text-capitalize"> 
+	<?php 
+		if($modelCoachInfo == null) {
+			echo 'User: '.$modelCurrentUser['username'];
+		} 
+		else {
+			echo $modelCoachInfo['first_name'] ;
+		}
+	?> 
+	
+<small> 
+	<?php  	echo $modelCoachInfo['last_name'] ?> 
+</small>	
+</h1>
+
+
+
 <hr/>
 <h3>Bio</h3>
 <p class="text-capitalize"> <?php echo $modelCoachInfo['coach_notes'] ?> </p>
@@ -20,8 +36,8 @@ $this->params['breadcrumbs'][] = $this->title;
 <h3>Team</h3>
 <p class ="text-capitalize" >
 		<?php 
-		if($modelTeamInfo['school_name'] == null) {
-			echo ' <a href="http://localhost/basic3/teamseason/create" ><button type="button" class="btn btn-default">Team Season Create</button></a>';
+		if($modelTeamInfo['school_name'] == null && $modelCoachInfo != null) {
+			echo 'No Team';
 		}
 		else {
 			echo $modelTeamInfo['school_name'] ;
@@ -39,6 +55,13 @@ $this->params['breadcrumbs'][] = $this->title;
 <h3>Home Phone</h3>
 <p class="text-capitalize"> <?php echo $modelCoachInfo['home_number'] ?></hp>
 <hr>
-<?php echo '<a href="http://localhost/basic3/coachinfo/update?id='.$modelCoachInfo['id'].'"><button type="button" class="btn btn-default">Edit Info</button></a>'; ?>
 
+<?php 
+	if($modelCoachInfo == null) {
+		echo '<a href="http://localhost/basic3/coachinfo/create"><button type="button" class="btn btn-default">Create Info</button></a>';
+	}
+	else {
+		echo '<a href="http://localhost/basic3/coachinfo/update?id='.$modelCoachInfo['id'].'"><button type="button" class="btn btn-default">Edit Info</button></a>';
+	}
+?>
 </div>

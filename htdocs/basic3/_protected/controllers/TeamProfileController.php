@@ -25,10 +25,48 @@ class TeamProfileController extends AppController
      * Lists all PlayerSeason models.
      * @return mixed
      */
-    public function actionIndex()
-    {
+    public function actionIndex() {
+	
+		$currentUserId = Yii::$app->user->id;
 		
+		$queryCoachInfo = CoachInfo::find()->where(['user_id' =>$currentUserId])->all();
+		$queryTeamSeason = [];
+		$modelTeamInfo = [];
+		$modelCoachInfo = [];
+		if ($queryCoachInfo == null) {
+			$modelCoachInfo = null;
+			$modelTeamInfo = null;
+		}
+		else {
+			$modelCoachInfo = $queryCoachInfo[0];
+			
+			$queryTeamSeason = TeamSeason::find()->where(['head_coach_id' => $modelCoachInfo['id']])->all();
+			
+			if($queryTeamSeason == null) {
+			
+			}
+			else {
+				if ($queryTeamSeason == null) {
+					$modelTeamSeason = null;
+					$modelTeamInfo = null;
+				}
+				else {
+					$modelTeamSeason = $queryTeamSeason[0];
+					$queryTeamInfo = TeamInfo::find()->where(['id' => $modelTeamSeason['team_info_id']])->all();
+					$modelTeamInfo= $queryTeamInfo[0];
+				}				
+			
+			}
+			
 
+		}
+		
+        return $this->render('index', [
+			'modelCoachInfo' => $modelCoachInfo,
+			'modelTeamInfo' => $modelTeamInfo,
+			'queryTeamSeason' => $queryTeamSeason,
+        ]);
+		
     }
 
 }

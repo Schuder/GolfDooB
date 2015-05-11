@@ -67,7 +67,7 @@ AppAsset::register($this);
             if (Yii::$app->user->can('editor'))
             {
                 $menuItems[] = ['label' => Yii::t('app', 'Profile'), 'url' => ['/coachprofile/index']];
-				$menuItems[] = ['label' => Yii::t('app', 'Team'), 'url' => ['/teamprofile/index']];
+				$menuItems[] = ['label' => Yii::t('app', 'School'), 'url' => ['/teamprofile/index']];
             }            
 
             // display Users to admin+ roles

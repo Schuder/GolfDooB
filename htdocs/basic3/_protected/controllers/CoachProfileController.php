@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use app\models\PlayerSeason;
+use app\models\User;
 use app\models\SearchPlayerInfo;
 use app\models\SearchCoachInfo;
 use app\models\SearchTeamInfo;
@@ -30,24 +31,37 @@ class CoachProfileController extends AppController
 		
 		$currentUserId = Yii::$app->user->id;
 		
+		$queryUser = User::find()->where(['id' => $currentUserId])->all();
+		$modelCurrentUser = $queryUser[0];
+		
 		$queryCoachInfo = CoachInfo::find()->where(['user_id' =>$currentUserId])->all();
-		$modelCoachInfo = $queryCoachInfo[0];
 		
-		$queryTeamSeason = TeamSeason::find()->where(['head_coach_id' => $modelCoachInfo['id']])->all();
-		
-		if ($queryTeamSeason == null) {
-			$modelTeamSeason = null;
+		if ($queryCoachInfo == null) {
+			$modelCoachInfo = null;
 			$modelTeamInfo = null;
 		}
 		else {
-			$modelTeamSeason = $queryTeamSeason[0];
-			$queryTeamInfo = TeamInfo::find()->where(['id' => $modelTeamSeason['team_info_id']])->all();
-			$modelTeamInfo= $queryTeamInfo[0];
+			$modelCoachInfo = $queryCoachInfo[0];
+						
+			$queryTeamSeason = TeamSeason::find()->where(['head_coach_id' => $modelCoachInfo['id']])->all();
+			
+			if ($queryTeamSeason == null) {
+				$modelTeamSeason = null;
+				$modelTeamInfo = null;
+			}
+			else {
+				$modelTeamSeason = $queryTeamSeason[0];
+				$queryTeamInfo = TeamInfo::find()->where(['id' => $modelTeamSeason['team_info_id']])->all();
+				$modelTeamInfo= $queryTeamInfo[0];
+			}	
+			
 		}
+		
 		
         return $this->render('index', [
 			'modelCoachInfo' => $modelCoachInfo,
 			'modelTeamInfo' => $modelTeamInfo,
+			'modelCurrentUser' => $modelCurrentUser
         ]);
     }
 

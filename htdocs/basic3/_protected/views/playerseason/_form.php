@@ -21,11 +21,7 @@ use app\models\TeamSeason;
 		)
 	) ?>
 
-    <?= $form->field($model, 'team_season_id')->dropDownList( ArrayHelper::map( TeamSeason::find()->all(),
-			'id',
-			function($a){ return $a->teamInfo['school_name'] . ' - ' . $a->teamInfo['mascot'] . ' - ' . $a->season['year']; }
-		)
-	) ?>
+
 
     <?= $form->field($model, 'year_in_school')->textInput() ?>
 

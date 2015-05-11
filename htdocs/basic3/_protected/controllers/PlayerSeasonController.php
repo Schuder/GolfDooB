@@ -48,12 +48,13 @@ class PlayerSeasonController extends AppController
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($seasonId)
     {
         $model = new PlayerSeason();
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+		$model['team_season_id'] = $seasonId;
+		
+        if ($model->load(Yii::$app->request->post()) && $model->save()) {	
+			return $this->redirect(['view', 'id' => $model->id]);			
         } else {
             return $this->render('create', [
                 'model' => $model,
