@@ -11,7 +11,7 @@ $this->title = Yii::t('app', Yii::$app->name);
 	<?php if (Yii::$app->user->isGuest) 
 	{
       ?>  <p class="lead"></p>
-	  <p><a class="btn btn-lg btn-success" href="/site/signup">You should create an account!</a></p>
+	  <p><a class="btn btn-lg btn-success" href="/basic3/site/signup">You should create an account!</a></p>
 	<?php }
 	else if (!Yii::$app->user->isGuest &&  $modelCoachInfo == null)
 		{?>
