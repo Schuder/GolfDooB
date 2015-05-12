@@ -26,7 +26,7 @@ AppAsset::register($this);
     <div class="wrap">
         <?php
             NavBar::begin([
-                'brandLabel' => Yii::t('app', Yii::$app->name),
+                'brandLabel' => 'Golf DB',
                 'brandUrl' => Yii::$app->homeUrl,
                 'options' => [
                     'class' => 'navbar-default navbar-fixed-top',
@@ -35,6 +35,8 @@ AppAsset::register($this);
 
             // everyone can see Home page
             $menuItems[] = ['label' => Yii::t('app', 'Home'), 'url' => ['/site/index']];
+			
+			if(Yii::$app->user->can('admin')) {
 			$menuItems[] = ['label' => 'Tables', 'items' => [
 			
 						['label' => 'Additional Stats', 'url' => ['/additonalstats/index']],
@@ -56,7 +58,7 @@ AppAsset::register($this);
 						['label' => 'Tee Box Info', 'url' => ['/teeboxinfo/index']],
 			
 			]];
-
+			}
             // we do not need to display Article/index, About and Contact pages to editor+ roles
             if (!Yii::$app->user->can('editor')) 
             {

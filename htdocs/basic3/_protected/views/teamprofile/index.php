@@ -19,7 +19,7 @@ $this->params['breadcrumbs'][] = $this->title;
 		<?php
 			if($modelCoachInfo == null) {
 				echo 'You have no coach info!<hr/>';
-				echo '<a href="http://localhost/basic3/coachinfo/create"><button type="button" class="btn btn-default">Create Info</button></a>';
+				echo '<a href="../coachinfo/create"><button type="button" class="btn btn-default">Create Info</button></a>';
 			}
 			else if ($modelTeamInfo == null) {
 				echo 'You\'re not on a team!<hr/>';
@@ -61,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
 	?>
 	<?php 
 		if($modelCoachInfo != null) {
-		echo '<a href="http://localhost/basic3/teamseason/create"><button type="button" class="btn btn-default">Create Team Season</button></a>';
+		echo '<a href="../teamseason/create"><button type="button" class="btn btn-default">Create Team Season</button></a>';
 		}
 	?> 
 

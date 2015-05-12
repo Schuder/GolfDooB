@@ -58,10 +58,10 @@ $this->params['breadcrumbs'][] = $this->title;
 
 <?php 
 	if($modelCoachInfo == null) {
-		echo '<a href="http://localhost/basic3/coachinfo/create"><button type="button" class="btn btn-default">Create Info</button></a>';
+		echo '<a href="../coachinfo/create"><button type="button" class="btn btn-default">Create Info</button></a>';
 	}
 	else {
-		echo '<a href="http://localhost/basic3/coachinfo/update?id='.$modelCoachInfo['id'].'"><button type="button" class="btn btn-default">Edit Info</button></a>';
+		echo '<a href="../coachinfo/update?id='.$modelCoachInfo['id'].'"><button type="button" class="btn btn-default">Edit Info</button></a>';
 	}
 ?>
 </div>
