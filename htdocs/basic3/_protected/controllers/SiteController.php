@@ -3,6 +3,7 @@ namespace app\controllers;
 
 use app\models\SearchCoachInfo;
 use app\models\CoachInfo;
+use app\models\PlayerInfo;
 use app\models\User;
 use app\models\LoginForm;
 use app\models\AccountActivation;
@@ -90,13 +91,24 @@ class SiteController extends AppController
     {
 		$currentUserId = Yii::$app->user->id;
 		$queryCoachInfo = CoachInfo::find()->where(['user_id' =>$currentUserId])->all();
+
 		if ($queryCoachInfo == null)
 			$modelCoachInfo =  null;
 		else
 		{
 			$modelCoachInfo = $queryCoachInfo[0];
 		}
-			return $this->render('index',['modelCoachInfo' => $modelCoachInfo]);
+		
+		$queryCoaches = CoachInfo::find()->all();
+		$queryPlayers = PlayerInfo::find()->all();
+		$queryUser = User::find()->all();
+		
+			return $this->render('index',[
+			'modelCoachInfo' => $modelCoachInfo,
+			'queryCoaches' => $queryCoaches,
+			'queryPlayers' => $queryPlayers,
+			'queryUser' => $queryUser,
+			]);
 
     }
 
